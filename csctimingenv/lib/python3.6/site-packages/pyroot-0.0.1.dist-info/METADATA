@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyroot
+Version: 0.0.1
+Summary: Create the skeleton for a python project
+Home-page: https://github.com/joaompinto/pyroot
+Author: João Pinto
+Author-email: lamego.pinto@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools-scm
+
+# pyroot
+
+

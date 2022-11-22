@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <!-- Custom styles for this template-->
+        <link href="static/styles/sb-admin-2.min.css" rel="stylesheet">
+    </head>
+<body>
+<form name="run_num"  value="{{request.form['run_num']}}" method="get">
+    Search: <input type="text" name="searchbox">
+    <input type="submit" value="Submit">
+    <div>{{result|safe}}</div>
+</form>
+</body>
+</html>

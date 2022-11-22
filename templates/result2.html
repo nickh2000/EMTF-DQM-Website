@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.min.css') }}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.min.css') }}">
+
+    <title>CSC Timing Table</title>
+  </head>
+  <body>
+  
+
+  <div class="content">
+    
+    <div class="container" id = "main_container">
+      
+
+      <div class="table-responsive">
+        <h2 class="mb-5">CSC Timing Table</h2>
+        <table class="table table-striped custom-table">
+          {{ result['df'] |safe }}
+        </table>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <input type="hidden"  id="run_nums" value="{{ result['run_nums'] }}">
+  <input type="hidden"  id="plot_types" value="{{ result['plot_types'] }}">
+  <script type='module' src = "/static/js/draw_plots.js"></script>
+
+    <script src="{{ url_for('static',filename='js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/popper.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/main2.js')}}"></script>
+  </body>
+</html>

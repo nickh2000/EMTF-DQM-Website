@@ -1,0 +1,2 @@
+runregistry
+tests
